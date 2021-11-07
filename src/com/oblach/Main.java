@@ -23,7 +23,7 @@ public class Main {
 
         boolean booleanPer=true; // 1 байт.
 
-        String stringPer="А Игорёк - мусор!"; // Пустой, не нуловый = 24 байта. Каждый уникальный символ в строке + 16 байт.
+        String stringPer="А Игорёк - мусор!"; // Пустой, не нуловый = 24 байта. Каждый уникальный символ в строке + 16 байт
 
         System.out.println(bytePer);
 
