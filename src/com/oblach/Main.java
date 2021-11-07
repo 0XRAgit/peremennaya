@@ -3,9 +3,12 @@ package com.oblach;
 
 import sun.misc.VM;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
 	    byte bytePer=1; // 1 байт. от -128 до 127
 
@@ -86,7 +89,16 @@ public class Main {
         System.out.println("firstNumber = "+firstNumber);
 
         System.out.println("\nfirstNumber-- = "+(firstNumber--));
-        System.out.println("firstNumber = "+firstNumber);
+        System.out.println("firstNumber = "+firstNumber+"\n\n");
+
+        Scanner in = new Scanner(System.in);
+        int inputInt = in.nextInt();
+        System.out.println("Вы ввели число - "+inputInt);
+
+        double inputDouble;
+
+        inputDouble = in.nextDouble();
+        System.out.println("Вы ввели число - "+inputDouble);
     }
 }
 
@@ -124,5 +136,15 @@ public class Main {
 	4)Пользователь должен ввести 2 числа.
 	Вам надо показать на экран произведение этих чисел, сумму и разницу.
 	Покажите так же среднее арифметическое этих введенных чисел.
+
+	5)Пользователь вводит номер английской заглавной буквы в ASCII.
+	Вывести эту букву маленькую букву, оставив её заглавную версию в переменной.
+
+	6)Пусть цена товара A обычно составляет 1000 руб, и товара B составляет 500 руб.
+	Если клиент покупает товары вместе, то на них действует скидка 10% на всю покупку.
+	Выведите на экран переменную, которая стоимости суммы A+B со скидкой. Отдельно выведите на экран сумму скидки от этой покупки.
+
+	7)Объявите 10 переменных типа int со значениями 0,1, 2, 3, 4, 5, 6, 7, 8, 9.
+	Объявите ещё одну переменную и сохраните в неё сумму этих переменных, деленную на 10.
 
 */
